@@ -19,15 +19,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        
         Log.i("logging","onCreate executing")
         Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show()
     }
     override fun onStart() {
         super.onStart()
         Log.i("logging","onStart executing")
-
         Toast.makeText(this, "onStart", Toast.LENGTH_LONG).show()
+        Snackbar.make(findViewById(R.id.main),"hello everyone",Snackbar.LENGTH_LONG).show()
     }
     override fun onResume() {
         super.onResume()
